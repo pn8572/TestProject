@@ -1,4 +1,4 @@
-package java.com.task.sorting;
+package com.task.sorting;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +13,8 @@ public class Sorting {
 	/*
 	 * Initial version
 	 */
-	public static void main(String[] args) {
-
-	}
 	
-	List <Integer> numbers;
+	public List <Integer> numbers;
 
 	public Sorting(List<Integer> numbers) {
 		super();
