@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * 
  * @author prasanth.pillai
+ * @version 1.0
  *
  */
 public class Sorting {
@@ -14,6 +15,7 @@ public class Sorting {
 	 * Initial version
 	 */
 	
+	//list of integers to hold the final sorted values
 	public List <Integer> numbers;
 
 	public Sorting(List<Integer> numbers) {
@@ -21,14 +23,17 @@ public class Sorting {
 		this.numbers = numbers;
 	}
 	
+	//initialise the attribute
 	public Sorting() {
 		super();
 		this.numbers = new ArrayList<Integer>();
 	}
-	public List<Integer> addToDraw(int number) {
+	
+	//add a new number to the list
+	public void addToDraw(int number) {
 		
 		add(number);
-		return numbers;
+		//return numbers;
 	}
 
 	private void add(int number) {
@@ -39,6 +44,11 @@ public class Sorting {
 			addToCurrentList(number);
 		}
 
+	/*
+	 * Actual sorting logic.
+	 * this a simple logic with no java.util or helper class usage
+	 */
+	
 	private void addToCurrentList(int number) {
 		
 		int i = 0;
@@ -49,8 +59,4 @@ public class Sorting {
 		}
 		numbers.add(i, number);
 	}
-		
-	
-	
-
 }
