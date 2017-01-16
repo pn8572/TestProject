@@ -9,7 +9,6 @@ import junit.framework.TestCase;
 public class NumberToWordsTest  extends TestCase {
 
 	NumberToWords NumberToWordsObj;
-	String displayWords;
 	@Override
 	protected void setUp() throws Exception {
 		super.setUp();
@@ -24,9 +23,10 @@ public class NumberToWordsTest  extends TestCase {
 	@Test
 	public void testAcceptance() throws Exception {
 	  
-		displayWords = NumberToWordsObj.convert(12);
+		String displayWords = NumberToWordsObj.convert(12);
         assertNotNull(NumberToWordsObj.displayWords);
         assertEquals("twelve", displayWords);
+        
 	}
 	
 	
