@@ -21,13 +21,23 @@ public class NumberToWordsTest  extends TestCase {
     }
 	
 	@Test
+	public void testNotNullAcceptance() throws Exception {
+	  
+		String displayWords = NumberToWordsObj.convert(12);
+        assertNotNull(displayWords);
+        assertEquals("twelve", displayWords);
+	}
+	
+	@Test
 	public void testAcceptance() throws Exception {
 	  
 		String displayWords = NumberToWordsObj.convert(12);
-        assertNotNull(NumberToWordsObj.displayWords);
         assertEquals("twelve", displayWords);
         
+        displayWords = NumberToWordsObj.convert(1049875);
+        assertEquals("one million forty nine thousand eight hundred seventy five", displayWords);
+        
+        displayWords = NumberToWordsObj.convert(23212);
+        assertEquals("twenty three thousand two hundred twelve", displayWords);
 	}
-	
-	
 }
