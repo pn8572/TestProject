@@ -1,4 +1,11 @@
 package com.task.number;
+/**
+ * 
+ * @author prasanth.pillai
+ * @version 1.0
+ * 
+ * convert the number between 1 and 1 billion to words
+ */
 
 public class NumberToWords {
 	
