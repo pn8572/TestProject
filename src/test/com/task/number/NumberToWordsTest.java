@@ -6,6 +6,15 @@ import com.task.number.NumberToWords;
 
 import junit.framework.TestCase;
 
+
+/**
+ * 
+ * @author prasanth.pillai
+ * @version 1.0
+ * 
+ * test class for the program to convert the number between 1 and 1 billion to words
+ */
+
 public class NumberToWordsTest  extends TestCase {
 
 	NumberToWords NumberToWordsObj;
